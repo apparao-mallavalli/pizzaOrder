@@ -40,7 +40,7 @@ function entered() {
     let msg = outingTemplate(output);
     this.welcome();
 
-  } else if (input.toLowerCase() == "how are you") {
+  } else {
     incomingTemplate(input);
     outingTemplate(" I am fine ,what about you .");
     welcome();
