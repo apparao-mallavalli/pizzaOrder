@@ -33,7 +33,9 @@ function entered() {
   document.getElementById("input_value").value = "";
 
   if (input.toLowerCase() == "hi") {
+
     incomingTemplate(input);
+
     let output = welcomeMessage[random(2)];
     let msg = outingTemplate(output);
     this.welcome();
