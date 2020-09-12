@@ -28,27 +28,27 @@ function random(n) {
 //Called when the user enters input 
 function entered() {
 
-  let input = document.getElementById("input_value").value;
+  // let input = document.getElementById("input_value").value;
 
-  document.getElementById("input_value").value = "";
-  if (input.toLowerCase() == "hi") {
-    incomingTemplate(input);
-    let output = welcomeMessage[random(2)];
-    let msg = outingTemplate(output);
-    welcome();
-
-
-  } else if (input.toLowerCase() == "how are you") {
-    incomingTemplate(input);
-    outingTemplate(" I am fine ,what about you .");
-    welcome();
+  // document.getElementById("input_value").value = "";
+  // if (input.toLowerCase() == "hi") {
+  //   incomingTemplate(input);
+  //   let output = welcomeMessage[random(2)];
+  //   let msg = outingTemplate(output);
+  //   welcome();
 
 
-  } else {
-    outingTemplate("sorry , i can't find you . ");
-    welcome();
-  }
+  // } else if (input.toLowerCase() == "how are you") {
+  //   incomingTemplate(input);
+  //   outingTemplate(" I am fine ,what about you .");
+  //   welcome();
 
+
+  // } else {
+  //   outingTemplate("sorry , i can't find you . ");
+  //   welcome();
+  // }
+  welcome();
 
 }
 
