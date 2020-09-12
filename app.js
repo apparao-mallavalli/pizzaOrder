@@ -31,6 +31,7 @@ function entered() {
   let input = document.getElementById("input_value").value;
 
   document.getElementById("input_value").value = "";
+
   if (input.toLowerCase() == "hi") {
     incomingTemplate(input);
     let output = welcomeMessage[random(2)];
@@ -55,6 +56,7 @@ function entered() {
 
 //called when related to welcome
 function welcome() {
+  incomingTemplate(input);
   msg = `<div class="outgoing_msg" >
          <div class="sent_msg">
          <button  onclick ="request(this)" type="button" class="btn btn-primary" value ="status">Check Order status</button><br><br>
