@@ -91,6 +91,7 @@ function request(button) {
 
 //function of status
 function statusFun() {
+  incomingTemplate("I want to check my order status");
 
   let msg = `<div class="outgoing_msg">
   <div class="sent_msg">
