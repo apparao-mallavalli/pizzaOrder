@@ -37,11 +37,15 @@ function entered() {
 
     document.getElementById("input_value").value = "";
     welcome();
-  } else(input.toLowerCase() == "how are you") {
+  } else if (input.toLowerCase() == "how are you") {
     incomingTemplate(input);
     outingTemplate(" I am fine ,what about you .");
     welcome();
 
+  } else {
+    incomingTemplate(input);
+    outingTemplate("Sorry ,i don't know it");
+    welcome();
   }
 
 
