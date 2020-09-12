@@ -102,6 +102,7 @@ function statusFun() {
 //checking the order with the help of service.js file
 function checkStatus() {
   orderId = document.getElementById("input_value").value;
+  inputTemplate(orderId);
   document.getElementById("input_value").value = "";
   pizza
     .get(orderId)
