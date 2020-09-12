@@ -4,7 +4,7 @@ class Pizza {
     async get(id) {
         id = parseInt(id);
 
-        let response = await fetch('http://52.66.157.72/pizzaOrders/' + id);
+        let response = await fetch('https://52.66.157.72/pizzaOrders/' + id);
         let user = await response.json();
 
         return user;
