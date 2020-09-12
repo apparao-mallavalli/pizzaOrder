@@ -46,10 +46,6 @@ function entered() {
     welcome();
 
 
-  } else {
-    incomingTemplate(input);
-    outingTemplate("sorry , i can't find you . ");
-    welcome();
   }
 
 
@@ -127,7 +123,7 @@ function checkStatus() {
 // Taking the order .Order flow starts from this function
 
 function order() {
-  document.getElementById("myBtn").onclick = pizzaQuant;
+  //document.getElementById("myBtn").onclick = pizzaQuant;
   incomingTemplate("I want to order the pizza");
   let msg = outingTemplate("Choose One Item ");
   document.getElementById("myBtn").onclick = pizzaQuant;
@@ -176,9 +172,10 @@ function pizzaSiz(button) {
   pizzaSize = button.value;
   incomingTemplate(pizzaSize);
   outingTemplate("Choose  Item Qunatity ");
+  document.getElementById("myBtn").onclick = pizzaQuant;
   document.getElementById("myBtn").disabled = false;
   document.getElementById("input_value").disabled = false;
-  document.getElementById("myBtn").onclick = pizzaQuant;
+
 
 }
 
