@@ -36,8 +36,7 @@ function entered() {
     incomingTemplate(input);
     let output = welcomeMessage[random(2)];
     let msg = outingTemplate(output);
-    welcome();
-
+    this.welcome();
 
   } else if (input.toLowerCase() == "how are you") {
     incomingTemplate(input);
@@ -56,7 +55,7 @@ function entered() {
 
 //called when related to welcome
 function welcome() {
-  incomingTemplate(input);
+
   msg = `<div class="outgoing_msg" >
          <div class="sent_msg">
          <button  onclick ="request(this)" type="button" class="btn btn-primary" value ="status">Check Order status</button><br><br>
