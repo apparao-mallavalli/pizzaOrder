@@ -4,7 +4,7 @@ class Pizza {
     async get(id) {
         id = parseInt(id);
 
-        let response = await fetch('https://pizzaorder-env-3.eba-phvwyknc.ap-south-1.elasticbeanstalk.com/pizzaOrders/'+ id);
+        let response = await fetch('http://pizzaorder-env-3.eba-phvwyknc.ap-south-1.elasticbeanstalk.com/pizzaOrders/'+ id);
         let user = await response.json();
 
         return user;
@@ -13,7 +13,7 @@ class Pizza {
 
     //post data
     async post(userName, mobile, email, doorNo, street, city, pincode, pizzaItem, pizzaSize, pizzaQuantity, status) {
-        let response = await fetch("https://pizzaorder-env-3.eba-phvwyknc.ap-south-1.elasticbeanstalk.com/pizzaOrders", {
+        let response = await fetch("http://pizzaorder-env-3.eba-phvwyknc.ap-south-1.elasticbeanstalk.com/pizzaOrders", {
 
             // Adding method type 
             method: "POST",
